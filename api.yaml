@@ -1,0 +1,176 @@
+openapi: 3.0.1
+info:
+  title: Safh Paciente Microservice Endpoints
+  description: Definición de los Endpoints de Paciente Service para el sistema Safh
+  contact:
+    name: UNAM
+    url: https://www.unam.mx/
+    email: univaroman28@hotmail.com
+  version: v1
+servers:
+- url: http://localhost:8082
+  description: Generated server url
+tags:
+- name: paciente
+  description: API del Recurso Paciente
+paths:
+  /api/pacientes/registro:
+    post:
+      tags:
+      - paciente
+      summary: Registrar Paciente
+      operationId: registrarPaciente
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegistroPacienteRequest'
+        required: true
+      responses:
+        "409":
+          description: Ya existe un paciente con el mail especificado
+          content: {}
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                type: string
+        "201":
+          description: Paciente Creado Exitosamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Paciente'
+  /api/pacientes:
+    get:
+      tags:
+      - paciente
+      summary: Obtener Todos los Pacientes
+      operationId: obtenerPacientes
+      responses:
+        "409":
+          description: Conflict
+          content:
+            '*/*':
+              schema:
+                type: string
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                type: string
+        "202":
+          description: Listado de pacientes
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Paciente'
+  /api/pacientes/{id}:
+    get:
+      tags:
+      - paciente
+      summary: Obtener Paciente
+      operationId: obtenerPacientePorId
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        "409":
+          description: Conflict
+          content:
+            '*/*':
+              schema:
+                type: string
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                type: string
+        "404":
+          description: Paciente no encontrado
+        "200":
+          description: Paciente Encontrado Exitosamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Paciente'
+    delete:
+      tags:
+      - paciente
+      summary: Eliminar  Paciente
+      operationId: eliminarPaciente
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        "409":
+          description: Conflict
+          content:
+            '*/*':
+              schema:
+                type: string
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                type: string
+        "204":
+          description: VOID
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Paciente'
+components:
+  schemas:
+    Domicilio:
+      required:
+      - calle
+      - numExterior
+      type: object
+      properties:
+        calle:
+          type: string
+        numExterior:
+          type: string
+        numInterior:
+          type: string
+    Paciente:
+      required:
+      - nombre
+      - telefonoCelular
+      type: object
+      properties:
+        id:
+          type: string
+        nombre:
+          type: string
+        telefonoCelular:
+          type: string
+        ultimoIngreso:
+          type: string
+        domicilios:
+          type: array
+          items:
+            $ref: '#/components/schemas/Domicilio'
+    RegistroPacienteRequest:
+      required:
+      - domicilio
+      - paciente
+      type: object
+      properties:
+        paciente:
+          $ref: '#/components/schemas/Paciente'
+        domicilio:
+          $ref: '#/components/schemas/Domicilio'
