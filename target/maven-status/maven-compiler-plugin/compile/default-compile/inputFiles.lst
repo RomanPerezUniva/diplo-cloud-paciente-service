@@ -1,0 +1,12 @@
+/Users/romanperezjuarez/diplomadoCloud/practica1/diplo-cloud-paciente-service/src/main/java/unam/diplomado/safh/pacienteservice/config/OpenApiConfig.java
+/Users/romanperezjuarez/diplomadoCloud/practica1/diplo-cloud-paciente-service/src/main/java/unam/diplomado/safh/pacienteservice/api/PacienteController.java
+/Users/romanperezjuarez/diplomadoCloud/practica1/diplo-cloud-paciente-service/src/main/java/unam/diplomado/safh/pacienteservice/service/PacienteServiceImpl.java
+/Users/romanperezjuarez/diplomadoCloud/practica1/diplo-cloud-paciente-service/src/main/java/unam/diplomado/safh/pacienteservice/domain/Paciente.java
+/Users/romanperezjuarez/diplomadoCloud/practica1/diplo-cloud-paciente-service/src/main/java/unam/diplomado/safh/pacienteservice/dto/RegistroPacienteRequest.java
+/Users/romanperezjuarez/diplomadoCloud/practica1/diplo-cloud-paciente-service/src/main/java/unam/diplomado/safh/pacienteservice/domain/Domicilio.java
+/Users/romanperezjuarez/diplomadoCloud/practica1/diplo-cloud-paciente-service/src/main/java/unam/diplomado/safh/pacienteservice/api/PacienteControllerAdvice.java
+/Users/romanperezjuarez/diplomadoCloud/practica1/diplo-cloud-paciente-service/src/main/java/unam/diplomado/safh/pacienteservice/PacienteServiceApplication.java
+/Users/romanperezjuarez/diplomadoCloud/practica1/diplo-cloud-paciente-service/src/main/java/unam/diplomado/safh/pacienteservice/domain/PacienteAlreadyExistsException.java
+/Users/romanperezjuarez/diplomadoCloud/practica1/diplo-cloud-paciente-service/src/main/java/unam/diplomado/safh/pacienteservice/api/PacienteApi.java
+/Users/romanperezjuarez/diplomadoCloud/practica1/diplo-cloud-paciente-service/src/main/java/unam/diplomado/safh/pacienteservice/service/PacienteService.java
+/Users/romanperezjuarez/diplomadoCloud/practica1/diplo-cloud-paciente-service/src/main/java/unam/diplomado/safh/pacienteservice/repository/PacienteRepository.java
