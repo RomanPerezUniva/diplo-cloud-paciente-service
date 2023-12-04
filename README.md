@@ -37,6 +37,29 @@ The following scripts are provided for the MongoDB database/collections creation
 
 `// TODO `
 
+### Creating the image
+
+The image is based on [khipu/openjdk17](https://hub.docker.com/layers/khipu/openjdk17-alpine/latest/images/sha256-4dacc78eb744a6caf25ceae4eefa1f024455d62430c3a04fc2ccde320b7587d9?context=explore)
+
+Complete specification is in the [Dockerfile](./Dockerfile)
+
+For build the image:
+
+`podman build -t roman281/diplo-cloud-paciente-service .`
+
+Validate the image running a container:
+
+`podman run -p 8081:8081 roman281/diplo-cloud-paciente-service`
+
+Expected output
+
+![Image running in a container over podman](_resources/image_container_podman.png)
+
+Once build, and proved the image, push it to docker hub
+
+ podman push roman281/diplo-cloud-paciente-service
+![Image pushing into dockerhub](_resources/image_pushing_docker.png)
+![Image dockerhub](_resources/image_docker.png)
 ## Test
 
 Execute the next `curl` command to validate the deploy of the service. 

@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: pacientes
+  name: pacientes
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: pacientes
+  template:
+    metadata:
+      labels:
+        app: pacientes
+    spec:
+      containers:
+      - image: docker.io/roman281/diplo-cloud-paciente-service:v2
+        name: pacientes
+        ports:
+        - containerPort: 8081
+          protocol: TCP
+        resources:
+          limits:
+            cpu: '1'
+            memory: 256Mi
+          requests:
+            cpu: '1'
+            memory: 128Mi
+
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: pacientes
+  name: pacientes
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: pacientes
+  type: ClusterIP

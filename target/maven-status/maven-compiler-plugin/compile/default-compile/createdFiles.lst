@@ -1,0 +1,12 @@
+unam/diplomado/safh/pacienteservice/api/PacienteControllerAdvice.class
+unam/diplomado/safh/pacienteservice/api/PacienteController.class
+unam/diplomado/safh/pacienteservice/api/PacienteApi.class
+unam/diplomado/safh/pacienteservice/domain/PacienteAlreadyExistsException.class
+unam/diplomado/safh/pacienteservice/repository/PacienteRepository.class
+unam/diplomado/safh/pacienteservice/config/OpenApiConfig.class
+unam/diplomado/safh/pacienteservice/dto/RegistroPacienteRequest.class
+unam/diplomado/safh/pacienteservice/service/PacienteServiceImpl.class
+unam/diplomado/safh/pacienteservice/domain/Paciente.class
+unam/diplomado/safh/pacienteservice/domain/Domicilio.class
+unam/diplomado/safh/pacienteservice/PacienteServiceApplication.class
+unam/diplomado/safh/pacienteservice/service/PacienteService.class
