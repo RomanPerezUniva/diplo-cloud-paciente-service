@@ -15,7 +15,7 @@ spec:
         app: pacientes
     spec:
       containers:
-      - image: docker.io/roman281/diplo-cloud-paciente-service:v2
+      - image: docker.io/roman281/diplo-cloud-paciente-service:snapshot
         name: pacientes
         ports:
         - containerPort: 8081
