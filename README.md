@@ -3,7 +3,7 @@
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
-[![Red Hat OpenShift|kubernetes version v1.26.9+c7606e7](http://www.w3.org/2000/svg)](https://www.redhat.com/cms/managed-files/Asset-Red_Hat-Logo_page-Logo-RGB.svg)
+[![Red Hat OpenShift|kubernetes version v1.26.9+c7606e7](https://www.redhat.com/cms/managed-files/Asset-Red_Hat-Logo_page-Logo-RGB.svg)](https://www.redhat.com/en/technologies/cloud-computing/openshift/get-started)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
