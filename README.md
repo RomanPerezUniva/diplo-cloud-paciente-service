@@ -3,6 +3,8 @@
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
+[![Red Hat OpenShift|kubernetes version v1.26.9+c7606e7](http://www.w3.org/2000/svg)](https://www.redhat.com/en/technologies/cloud-computing/openshift/get-started)
+
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible,
