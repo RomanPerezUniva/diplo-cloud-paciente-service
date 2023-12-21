@@ -27,10 +27,7 @@ The paciente microservice provides the following functionalities:
 - 
 
 The following scripts are provided for the MongoDB database/collections creation:
-* usuariodb_creation.js
-* estado_collection.js
-* tipo_domicilio_collection.js
-* load_collections_data.js
+* pacientedb_creation.js
 
 
 ## Deploy
